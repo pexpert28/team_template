@@ -1,0 +1,23 @@
+# CODEOWNERS
+#
+# Each line assigns ownership of a file pattern to a team or individual.
+# The LAST matching rule wins.
+#
+# Syntax: <pattern>   @<owner>
+# Owners can be: @org/team-slug  or  @github-username
+#
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# ── Default owner for everything ─────────────────────────────────────────────
+*                           @YOUR_ORG/YOUR_TEAM_NAME
+
+# ── CI / repo configuration requires team lead review ────────────────────────
+.github/                    @YOUR_ORG/YOUR_TEAM_NAME
+Dockerfile*                 @YOUR_ORG/YOUR_TEAM_NAME
+docker-compose*.yml         @YOUR_ORG/YOUR_TEAM_NAME
+
+# ── Docs can be reviewed by anyone on the team ───────────────────────────────
+docs/                       @YOUR_ORG/YOUR_TEAM_NAME
+
+# ── Example: assign a sub-path to a specific person ──────────────────────────
+# src/auth/                 @specific-github-username

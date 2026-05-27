@@ -1,0 +1,46 @@
+name: 🚀 Feature Request
+description: Suggest a new feature or improvement
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea? Describe it clearly so the team can discuss and prioritize it.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the pain point or gap this feature addresses.
+      placeholder: "Currently, when I want to do X, I have to ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workarounds or other approaches you've thought about?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (your view)
+      options:
+        - Low — nice to have
+        - Medium — would meaningfully help my workflow
+        - High — blocking important work
+    validations:
+      required: true
